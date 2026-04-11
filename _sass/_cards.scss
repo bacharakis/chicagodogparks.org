@@ -1,0 +1,134 @@
+.park-card {
+  display: block;
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: $gray-900;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+  &:hover {
+    border-color: $green-400;
+    box-shadow: 0 4px 16px rgba(45, 106, 79, 0.1);
+    transform: translateY(-2px);
+    color: $gray-900;
+  }
+}
+
+.park-card__name {
+  color: $green-700;
+  margin-bottom: 0.25rem;
+}
+
+.park-card__neighborhood {
+  font-size: 0.8rem;
+  color: $green-600;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.park-card__address {
+  font-size: 0.9rem;
+  color: $gray-500;
+  margin-bottom: 0.5rem;
+}
+
+.park-card__acreage {
+  font-size: 0.85rem;
+  color: $tan-700;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.park-card__amenities {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.amenity-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: $green-50;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.amenity-badge--more {
+  font-size: 0.75rem;
+  color: $gray-500;
+  background: $gray-100;
+}
+
+// Featured card variant
+.park-card--featured {
+  border-color: $green-400;
+  border-width: 2px;
+  background: linear-gradient(to bottom, $green-50, $white);
+}
+
+// Info cards (for community, rules, etc.)
+.info-card {
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  padding: 1.5rem;
+  h3 {
+    color: $green-700;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: $gray-700;
+    font-size: 0.95rem;
+  }
+  a { font-weight: 500; }
+}
+
+// Stat cards
+.stat-card {
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  padding: 1.5rem;
+  text-align: center;
+  .stat-card__icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  .stat-card__number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $green-700;
+  }
+  .stat-card__label {
+    font-size: 0.85rem;
+    color: $gray-500;
+  }
+}
+
+// News card
+.news-card {
+  display: block;
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: $gray-900;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  &:hover {
+    border-color: $green-400;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    color: $gray-900;
+  }
+  .news-card__date {
+    font-size: 0.8rem;
+    color: $gray-500;
+    margin-bottom: 0.35rem;
+  }
+  h3 { color: $green-700; margin-bottom: 0.5rem; }
+  p { color: $gray-700; font-size: 0.9rem; margin: 0; }
+}

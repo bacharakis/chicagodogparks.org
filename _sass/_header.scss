@@ -1,0 +1,88 @@
+.site-header {
+  background: $white;
+  border-bottom: 2px solid $green-100;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: $green-900;
+  text-decoration: none;
+  &:hover { color: $green-700; }
+}
+
+.site-logo__icon {
+  font-size: 1.5rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.site-nav__link {
+  padding: 0.5rem 0.75rem;
+  border-radius: $radius;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $gray-700;
+  transition: background 0.15s, color 0.15s;
+  &:hover {
+    background: $green-50;
+    color: $green-700;
+  }
+  &--active {
+    background: $green-100;
+    color: $green-700;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $gray-700;
+    margin: 5px 0;
+    transition: transform 0.2s;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .menu-toggle { display: block; }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: $white;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 2px solid $green-100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    &--open { display: flex; }
+  }
+  .site-nav__link {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}

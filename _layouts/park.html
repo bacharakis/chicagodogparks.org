@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<section class="page-header">
+  <div class="container">
+    <p class="park-neighborhood">{{ page.neighborhood }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="park-address">{{ page.address }}</p>
+  </div>
+</section>
+<section class="page-content">
+  <div class="container container--narrow">
+    <div class="park-detail">
+      {% if page.acreage %}
+      <div class="park-detail__stat">
+        <strong>Size:</strong> {{ page.acreage }}
+      </div>
+      {% endif %}
+      {% if page.surface %}
+      <div class="park-detail__stat">
+        <strong>Surface:</strong> {{ page.surface }}
+      </div>
+      {% endif %}
+      {% if page.hours %}
+      <div class="park-detail__stat">
+        <strong>Hours:</strong> {{ page.hours }}
+      </div>
+      {% endif %}
+      {% if page.amenities.size > 0 %}
+      <div class="park-detail__amenities">
+        <strong>Amenities:</strong>
+        <div class="amenity-tags">
+          {% for amenity in page.amenities %}
+          {% assign a = site.data.amenities[amenity] %}
+          {% if a %}
+          <span class="amenity-tag">{{ a.icon }} {{ a.label }}</span>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% if page.highlights %}
+      <div class="park-detail__highlights">
+        <strong>Highlights:</strong>
+        <ul>
+          {% for h in page.highlights %}
+          <li>{{ h }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+    {{ content }}
+    <p class="post-back"><a href="{{ '/parks/' | relative_url }}">&larr; All Parks</a></p>
+  </div>
+</section>

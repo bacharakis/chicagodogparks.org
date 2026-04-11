@@ -1,0 +1,23 @@
+<a href="{{ park.url | relative_url }}" class="park-card" data-neighborhood="{{ park.neighborhood }}" data-amenities="{{ park.amenities | join: ' ' }}">
+  <div class="park-card__body">
+    <h3 class="park-card__name">{{ park.title }}</h3>
+    <p class="park-card__neighborhood">{{ park.neighborhood }}</p>
+    <p class="park-card__address">{{ park.address }}</p>
+    {% if park.acreage %}
+    <p class="park-card__acreage">{{ park.acreage }}</p>
+    {% endif %}
+    {% if park.amenities.size > 0 %}
+    <div class="park-card__amenities">
+      {% for amenity in park.amenities limit:5 %}
+      {% assign a = site.data.amenities[amenity] %}
+      {% if a %}
+      <span class="amenity-badge" title="{{ a.label }}">{{ a.icon }}</span>
+      {% endif %}
+      {% endfor %}
+      {% if park.amenities.size > 5 %}
+      <span class="amenity-badge amenity-badge--more">+{{ park.amenities.size | minus: 5 }}</span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</a>

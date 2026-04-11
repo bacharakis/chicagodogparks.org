@@ -1,0 +1,27 @@
+---
+layout: default
+title: News & Updates
+subtitle: The latest from Chicago's dog park scene
+permalink: /news/
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="subtitle">{{ page.subtitle }}</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    <div class="news-list">
+      {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}" class="news-card">
+        <p class="news-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

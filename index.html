@@ -1,0 +1,88 @@
+---
+layout: default
+title: Chicago Dog Parks — Your Complete Guide to Dog-Friendly Areas
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Chicago Dog Parks</h1>
+    <p class="hero__subtitle">Your complete guide to every dog-friendly area in the Windy City. Find the perfect park for your pup.</p>
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <span class="hero__stat-number">33+</span>
+        <span class="hero__stat-label">Official DFAs</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-number">2</span>
+        <span class="hero__stat-label">Dog Beaches</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-number">6am-11pm</span>
+        <span class="hero__stat-label">Daily Hours</span>
+      </div>
+    </div>
+    <a href="{{ '/parks/' | relative_url }}" class="hero__cta">Explore All Parks</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2>Popular Parks</h2>
+      <p>Chicago's most-loved dog-friendly areas</p>
+    </div>
+    <div class="grid grid--4">
+      {% assign featured = "Jackson Bark,Montrose Dog Beach,Wiggly Field,Grant Bark Park" | split: "," %}
+      {% for name in featured %}
+        {% assign park = site.parks | where: "title", name | first %}
+        {% if park %}
+          {% include park-card.html park=park %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <h2>What You Need to Know</h2>
+      <p>Quick essentials for visiting Chicago dog parks</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="info-card">
+        <h3>&#128203; DFA Permit Required</h3>
+        <p>All Chicago dog parks require an annual DFA permit ($10/year) available from participating veterinarians. Dogs must be vaccinated and licensed.</p>
+        <a href="{{ '/rules/' | relative_url }}">Learn about permits &rarr;</a>
+      </div>
+      <div class="info-card">
+        <h3>&#127774; Seasonal Tips</h3>
+        <p>Each season brings different conditions. From mud season in spring to water features in summer, know what to expect before you visit.</p>
+        <a href="{{ '/seasonal/' | relative_url }}">Seasonal guide &rarr;</a>
+      </div>
+      <div class="info-card">
+        <h3>&#129309; Community</h3>
+        <p>Chicago's dog park community is active and passionate. Volunteer groups maintain parks, host events, and advocate for improvements.</p>
+        <a href="{{ '/community/' | relative_url }}">Get involved &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2>Latest News</h2>
+      <p>Updates from Chicago's dog park scene</p>
+    </div>
+    <div class="grid grid--2">
+      {% for post in site.posts limit:4 %}
+      <a href="{{ post.url | relative_url }}" class="news-card">
+        <p class="news-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

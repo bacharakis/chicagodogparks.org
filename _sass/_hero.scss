@@ -1,0 +1,71 @@
+.hero {
+  background: linear-gradient(135deg, $green-700 0%, $green-900 100%);
+  color: $white;
+  padding: 5rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  color: $white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: $green-100;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.hero__stat {
+  text-align: center;
+}
+
+.hero__stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $green-400;
+  line-height: 1;
+}
+
+.hero__stat-label {
+  font-size: 0.85rem;
+  color: $green-100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero__cta {
+  display: inline-block;
+  background: $tan-500;
+  color: $white;
+  padding: 0.85rem 2rem;
+  border-radius: $radius;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: background 0.15s;
+  &:hover {
+    background: $tan-300;
+    color: $white;
+  }
+}
+
+@media (max-width: $bp-sm) {
+  .hero { padding: 3rem 0; }
+  .hero h1 { font-size: 2rem; }
+  .hero__subtitle { font-size: 1.05rem; }
+  .hero__stat-number { font-size: 2rem; }
+  .hero__stats { gap: 1.5rem; }
+}

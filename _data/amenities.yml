@@ -1,0 +1,39 @@
+fountains:
+  label: Water Fountains
+  icon: "&#128166;"
+benches:
+  label: Benches
+  icon: "&#129704;"
+shade:
+  label: Shade
+  icon: "&#127795;"
+agility:
+  label: Agility Equipment
+  icon: "&#127939;"
+separate_areas:
+  label: Separate Small/Large Areas
+  icon: "&#128054;"
+artificial_turf:
+  label: Artificial Turf
+  icon: "&#127793;"
+lighting:
+  label: Lighting
+  icon: "&#128161;"
+waste_dispensers:
+  label: Waste Dispensers
+  icon: "&#128465;"
+parking:
+  label: Parking
+  icon: "&#127359;"
+summer_water:
+  label: Summer Water Features
+  icon: "&#127754;"
+double_gate:
+  label: Double-Gated Entry
+  icon: "&#128682;"
+dog_wash:
+  label: Dog Wash Station
+  icon: "&#128703;"
+beach:
+  label: Beach/Swimming
+  icon: "&#127958;"

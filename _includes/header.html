@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="site-logo__icon">&#128062;</span>
+      <span class="site-logo__text">Chicago Dog Parks</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Main navigation">
+      {% for link in site.data.navigation %}
+      <a href="{{ link.url | relative_url }}" class="site-nav__link{% if page.url == link.url %} site-nav__link--active{% endif %}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    var nav = document.querySelector('.site-nav');
+    var expanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('site-nav--open');
+  });
+</script>

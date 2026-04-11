@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="page-header">
+  <div class="container">
+    <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}{% if page.category %} &middot; {{ page.category }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
+<article class="page-content">
+  <div class="container container--narrow">
+    {{ content }}
+    <p class="post-back"><a href="{{ '/news/' | relative_url }}">&larr; All News</a></p>
+  </div>
+</article>

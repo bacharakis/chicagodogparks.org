@@ -1,0 +1,45 @@
+---
+layout: default
+title: All Dog Parks
+subtitle: Browse all dog-friendly areas in Chicago
+permalink: /parks/
+scripts:
+  - /assets/js/parks-filter.js
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="subtitle">{{ page.subtitle }}</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    <div class="parks-filter">
+      <label class="parks-filter__label" for="search">Search:</label>
+      <input type="text" id="search" class="parks-filter__search" placeholder="Search by park name or address..." aria-label="Search parks">
+      <label class="parks-filter__label" for="neighborhood">Neighborhood:</label>
+      <select id="neighborhood" class="parks-filter__select" aria-label="Filter by neighborhood">
+        <option value="">All Neighborhoods</option>
+        {% for hood in site.data.neighborhoods %}
+        <option value="{{ hood }}">{{ hood }}</option>
+        {% endfor %}
+      </select>
+      <label class="parks-filter__label" for="amenity">Amenity:</label>
+      <select id="amenity" class="parks-filter__select" aria-label="Filter by amenity">
+        <option value="">All Amenities</option>
+        {% for amenity in site.data.amenities %}
+        <option value="{{ amenity[0] }}">{{ amenity[1].icon }} {{ amenity[1].label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <p class="parks-count"><span id="parks-count">{{ site.parks | size }}</span> parks found</p>
+    <div class="grid grid--3" id="parks-grid">
+      {% assign sorted_parks = site.parks | sort: "title" %}
+      {% for park in sorted_parks %}
+        {% include park-card.html park=park %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container--narrow {
+  max-width: $container-narrow;
+}
+
+main {
+  min-height: 60vh;
+}
+
+.page-header {
+  background: linear-gradient(135deg, $green-700, $green-900);
+  color: $white;
+  padding: 3rem 0;
+  h1 { color: $white; }
+  .subtitle { color: $green-100; font-size: 1.15rem; }
+}
+
+.page-content {
+  padding: 3rem 0;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: $green-100;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.post-back {
+  margin-top: 3rem;
+  a {
+    color: $green-700;
+    font-weight: 500;
+    &:hover { color: $green-500; }
+  }
+}
+
+.section {
+  padding: 4rem 0;
+  &--alt { background: $green-50; }
+  &--tan { background: $tan-50; }
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  p { color: $gray-500; font-size: 1.1rem; }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  &--2 { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  &--3 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  &--4 { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+}
+
+@media (max-width: $bp-sm) {
+  .page-header { padding: 2rem 0; }
+  .page-content { padding: 2rem 0; }
+  .section { padding: 2.5rem 0; }
+}

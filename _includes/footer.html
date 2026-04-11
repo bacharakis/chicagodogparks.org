@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__about">
+      <p class="site-footer__logo">&#128062; Chicago Dog Parks</p>
+      <p>Your complete guide to dog-friendly areas in the Windy City.</p>
+    </div>
+    <div class="site-footer__links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ '/parks/' | relative_url }}">All Parks</a></li>
+        <li><a href="{{ '/rules/' | relative_url }}">Rules & Permits</a></li>
+        <li><a href="{{ '/seasonal/' | relative_url }}">Seasonal Guide</a></li>
+        <li><a href="{{ '/news/' | relative_url }}">News</a></li>
+      </ul>
+    </div>
+    <div class="site-footer__links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.chicagoparkdistrict.com/facilities/dog-friendly-areas" target="_blank" rel="noopener">Chicago Park District</a></li>
+        <li><a href="https://www.chicago.gov/city/en/depts/cacc/provdrs/care/svcs/dog_registration.html" target="_blank" rel="noopener">Dog Registration</a></li>
+        <li><a href="{{ '/community/' | relative_url }}">Community Groups</a></li>
+      </ul>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} chicagodogparks.org &middot; Not affiliated with the Chicago Park District. Always verify information with official sources.</p>
+    </div>
+  </div>
+</footer>

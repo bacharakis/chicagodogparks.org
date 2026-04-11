@@ -1,0 +1,44 @@
+title: Chicago Dog Parks
+description: >-
+  Your complete guide to dog parks and dog-friendly areas in Chicago.
+  Find parks, learn the rules, and connect with the community.
+url: "https://chicagodogparks.org"
+baseurl: ""
+
+permalink: /news/:year/:month/:day/:title/
+
+collections:
+  parks:
+    output: true
+    permalink: /parks/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "parks"
+    values:
+      layout: park
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: "pages"
+    values:
+      layout: page
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+sass:
+  sass_dir: _sass
+  style: compressed
