@@ -1,6 +1,9 @@
 ---
 title: Park No. 551 DFA
 address: 353 N. DesPlaines St, Chicago, IL 60611
+lat: 41.8884
+lng: -87.6437
+image: /assets/images/parks/park-551-dfa.jpg
 neighborhood: River North / Near North
 acreage: "0.07 acres"
 surface: Mixed

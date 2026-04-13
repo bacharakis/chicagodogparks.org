@@ -1,6 +1,9 @@
 ---
 title: Jackson Bark
 address: 6000 S. Lake Shore Dr, Chicago, IL 60637
+lat: 41.7863
+lng: -87.5785
+image: /assets/images/parks/jackson-bark.jpg
 neighborhood: South Side / Bridgeport / Bronzeville
 acreage: "Large"
 surface: Mixed (90%+ recycled materials)

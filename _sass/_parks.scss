@@ -1,3 +1,26 @@
+// Parks map
+#parks-map {
+  height: 450px;
+  border-radius: $radius-lg;
+  border: 2px solid $amber-300;
+  z-index: 1;
+}
+
+.parks-map-section {
+  padding: 2rem 0 0;
+}
+
+.leaflet-popup-content {
+  font-family: $font-body;
+  h4 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    color: $amber-900;
+    a { color: $amber-700; text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+  p { margin: 0.15rem 0; font-size: 0.85rem; color: $gray-500; }
+}
+
 // Park listing page
 .parks-filter {
   display: flex;
@@ -23,7 +46,7 @@
   color: $gray-700;
   cursor: pointer;
   &:focus {
-    outline: 2px solid $green-500;
+    outline: 2px solid $amber-500;
     outline-offset: 1px;
   }
 }
@@ -37,9 +60,9 @@
   font-size: 0.9rem;
   font-family: $font-body;
   &:focus {
-    outline: 2px solid $green-500;
+    outline: 2px solid $amber-500;
     outline-offset: 1px;
-    border-color: $green-500;
+    border-color: $amber-500;
   }
 }
 
@@ -49,22 +72,37 @@
   margin-bottom: 1rem;
 }
 
+// Park hero image
+.park-hero-image {
+  padding: 0;
+  margin-top: -1rem;
+  img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: $radius-lg;
+    display: block;
+    margin: 0 auto;
+  }
+  .container { padding-top: 1.5rem; }
+}
+
 // Park detail page
 .park-neighborhood {
   font-size: 0.85rem;
-  color: $green-100;
+  color: $amber-100;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
 }
 
 .park-address {
-  color: $green-100;
+  color: $amber-100;
   font-size: 1.1rem;
 }
 
 .park-detail {
-  background: $green-50;
+  background: $amber-50;
   border-radius: $radius-lg;
   padding: 1.5rem;
   margin-bottom: 2rem;
@@ -72,14 +110,14 @@
 
 .park-detail__stat {
   margin-bottom: 0.75rem;
-  strong { color: $green-900; }
+  strong { color: $amber-900; }
 }
 
 .park-detail__amenities {
   margin-bottom: 0.75rem;
   strong {
     display: block;
-    color: $green-900;
+    color: $amber-900;
     margin-bottom: 0.5rem;
   }
 }
@@ -95,8 +133,8 @@
   align-items: center;
   gap: 0.35rem;
   background: $white;
-  border: 1px solid $green-400;
-  color: $green-700;
+  border: 1px solid $amber-400;
+  color: $amber-700;
   padding: 0.3rem 0.75rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -105,7 +143,7 @@
 .park-detail__highlights {
   strong {
     display: block;
-    color: $green-900;
+    color: $amber-900;
     margin-bottom: 0.5rem;
   }
   ul {
@@ -116,7 +154,7 @@
     padding-left: 1.25rem;
     position: relative;
     &::before {
-      content: "&#128062;";
+      content: "\1F43E";
       position: absolute;
       left: 0;
       font-size: 0.8rem;

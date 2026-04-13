@@ -1,6 +1,9 @@
 ---
 title: Churchill DFA
 address: 1825 N. Damen Ave, Chicago, IL 60614
+lat: 41.9149
+lng: -87.6777
+image: /assets/images/parks/churchill-dfa.jpg
 neighborhood: Lincoln Park / Bucktown / Wicker Park
 surface: Pea gravel
 hours: 6:00 AM - 11:00 PM

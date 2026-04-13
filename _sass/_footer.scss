@@ -1,6 +1,6 @@
 .site-footer {
-  background: $green-900;
-  color: $green-100;
+  background: $amber-900;
+  color: $amber-100;
   padding: 3rem 0 1.5rem;
 }
 
@@ -27,7 +27,7 @@
   }
   ul { list-style: none; padding: 0; }
   a {
-    color: $green-300;
+    color: $amber-300;
     font-size: 0.9rem;
     &:hover { color: $white; }
   }

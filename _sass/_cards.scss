@@ -1,28 +1,56 @@
 .park-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: $white;
   border: 1px solid $gray-200;
   border-radius: $radius-lg;
-  padding: 1.5rem;
+  overflow: hidden;
   text-decoration: none;
   color: $gray-900;
   transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
   &:hover {
-    border-color: $green-400;
+    border-color: $amber-400;
     box-shadow: 0 4px 16px rgba(45, 106, 79, 0.1);
     transform: translateY(-2px);
     color: $gray-900;
   }
 }
 
+.park-card__image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .park-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.park-card__image--placeholder {
+  background: linear-gradient(135deg, $amber-100, $amber-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span { font-size: 3rem; opacity: 0.4; }
+}
+
+.park-card__body {
+  padding: 1.25rem;
+}
+
 .park-card__name {
-  color: $green-700;
+  color: $amber-700;
   margin-bottom: 0.25rem;
 }
 
 .park-card__neighborhood {
   font-size: 0.8rem;
-  color: $green-600;
+  color: $amber-600;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -54,7 +82,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: $green-50;
+  background: $amber-50;
   border-radius: 6px;
   font-size: 1rem;
   cursor: default;
@@ -68,9 +96,9 @@
 
 // Featured card variant
 .park-card--featured {
-  border-color: $green-400;
+  border-color: $amber-400;
   border-width: 2px;
-  background: linear-gradient(to bottom, $green-50, $white);
+  background: linear-gradient(to bottom, $amber-50, $white);
 }
 
 // Info cards (for community, rules, etc.)
@@ -80,7 +108,7 @@
   border-radius: $radius-lg;
   padding: 1.5rem;
   h3 {
-    color: $green-700;
+    color: $amber-700;
     margin-bottom: 0.5rem;
   }
   p {
@@ -101,7 +129,7 @@
   .stat-card__number {
     font-size: 1.75rem;
     font-weight: 700;
-    color: $green-700;
+    color: $amber-700;
   }
   .stat-card__label {
     font-size: 0.85rem;
@@ -120,7 +148,7 @@
   color: $gray-900;
   transition: border-color 0.15s, box-shadow 0.15s;
   &:hover {
-    border-color: $green-400;
+    border-color: $amber-400;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     color: $gray-900;
   }
@@ -129,6 +157,6 @@
     color: $gray-500;
     margin-bottom: 0.35rem;
   }
-  h3 { color: $green-700; margin-bottom: 0.5rem; }
+  h3 { color: $amber-700; margin-bottom: 0.5rem; }
   p { color: $gray-700; font-size: 0.9rem; margin: 0; }
 }

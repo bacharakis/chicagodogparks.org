@@ -1,6 +1,6 @@
 .site-header {
   background: $white;
-  border-bottom: 2px solid $green-100;
+  border-bottom: 2px solid $amber-100;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -19,9 +19,9 @@
   gap: 0.5rem;
   font-weight: 700;
   font-size: 1.15rem;
-  color: $green-900;
+  color: $amber-900;
   text-decoration: none;
-  &:hover { color: $green-700; }
+  &:hover { color: $amber-700; }
 }
 
 .site-logo__icon {
@@ -41,12 +41,12 @@
   color: $gray-700;
   transition: background 0.15s, color 0.15s;
   &:hover {
-    background: $green-50;
-    color: $green-700;
+    background: $amber-50;
+    color: $amber-700;
   }
   &--active {
-    background: $green-100;
-    color: $green-700;
+    background: $amber-100;
+    color: $amber-700;
   }
 }
 
@@ -77,7 +77,7 @@
     background: $white;
     flex-direction: column;
     padding: 1rem;
-    border-bottom: 2px solid $green-100;
+    border-bottom: 2px solid $amber-100;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     &--open { display: flex; }
   }

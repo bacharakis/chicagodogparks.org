@@ -1,6 +1,9 @@
 ---
 title: Ohio Place Dog Park
 address: 350 W. Ohio St, Chicago, IL 60654
+lat: 41.8924
+lng: -87.6363
+image: /assets/images/parks/ohio-place-dog-park.jpg
 neighborhood: River North / Near North
 acreage: "Narrow"
 surface: Mixed

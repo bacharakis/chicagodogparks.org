@@ -1,4 +1,13 @@
 <a href="{{ park.url | relative_url }}" class="park-card" data-neighborhood="{{ park.neighborhood }}" data-amenities="{{ park.amenities | join: ' ' }}">
+  {% if park.image %}
+  <div class="park-card__image">
+    <img src="{{ park.image | relative_url }}" alt="{{ park.title }}" loading="lazy">
+  </div>
+  {% else %}
+  <div class="park-card__image park-card__image--placeholder">
+    <span>🐾</span>
+  </div>
+  {% endif %}
   <div class="park-card__body">
     <h3 class="park-card__name">{{ park.title }}</h3>
     <p class="park-card__neighborhood">{{ park.neighborhood }}</p>

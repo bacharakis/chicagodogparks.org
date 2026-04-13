@@ -1,6 +1,9 @@
 ---
 title: Hamlin DFA
 address: 3035 N. Hoyne Ave, Chicago, IL 60618
+lat: 41.9373
+lng: -87.6799
+image: /assets/images/parks/hamlin-dfa.jpg
 neighborhood: Lincoln Park / Bucktown / Wicker Park
 acreage: "0.16 acres"
 surface: Mixed

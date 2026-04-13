@@ -1,6 +1,9 @@
 ---
 title: Mary Bartelme DFA
 address: 115 S. Sangamon St, Chicago, IL 60607
+lat: 41.8802
+lng: -87.6507
+image: /assets/images/parks/mary-bartelme-dfa.jpg
 neighborhood: West Loop
 acreage: "Small"
 surface: Artificial turf

@@ -19,7 +19,7 @@ body {
 h1, h2, h3, h4 {
   font-family: $font-heading;
   line-height: 1.2;
-  color: $green-900;
+  color: $amber-900;
 }
 
 h1 { font-size: 2.25rem; }
@@ -30,9 +30,9 @@ h4 { font-size: 1.1rem; }
 p { margin-bottom: 1rem; }
 
 a {
-  color: $green-700;
+  color: $amber-700;
   text-decoration: none;
-  &:hover { color: $green-500; }
+  &:hover { color: $amber-500; }
 }
 
 ul, ol {
@@ -65,9 +65,9 @@ th, td {
 }
 
 th {
-  background: $green-50;
+  background: $amber-50;
   font-weight: 600;
-  color: $green-900;
+  color: $amber-900;
 }
 
 @media (max-width: $bp-sm) {

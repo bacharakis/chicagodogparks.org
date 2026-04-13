@@ -1,6 +1,9 @@
 ---
 title: Puptown
 address: 4900 N. Marine Dr, Chicago, IL 60640
+lat: 41.9701
+lng: -87.6491
+image: /assets/images/parks/puptown.jpg
 neighborhood: Lakeview / Uptown
 acreage: "0.38 acres"
 surface: Concrete and gravel

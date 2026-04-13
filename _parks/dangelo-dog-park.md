@@ -1,6 +1,9 @@
 ---
 title: D'Angelo Dog Park
 address: 438 S. Franklin St, Chicago, IL 60607
+lat: 41.8765
+lng: -87.6353
+image: /assets/images/parks/dangelo-dog-park.jpg
 neighborhood: South Side / Bridgeport / Bronzeville
 acreage: "0.11 acres"
 surface: Mixed

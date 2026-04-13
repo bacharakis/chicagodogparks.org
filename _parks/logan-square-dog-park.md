@@ -1,6 +1,9 @@
 ---
 title: Logan Square Dog Park
 address: 2732 N. Avers Ave, Chicago, IL 60647
+lat: 41.9309
+lng: -87.7238
+image: /assets/images/parks/logan-square-dog-park.jpg
 neighborhood: Logan Square / Ravenswood / Lincoln Square
 surface: Concrete
 hours: 6:00 AM - 11:00 PM

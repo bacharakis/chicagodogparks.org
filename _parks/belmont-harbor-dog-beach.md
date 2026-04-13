@@ -1,6 +1,9 @@
 ---
 title: Belmont Harbor Dog Beach
 address: Belmont Ave & Lake Shore Dr, Chicago, IL 60657
+lat: 41.9453
+lng: -87.6403
+image: /assets/images/parks/belmont-harbor-dog-beach.jpg
 neighborhood: Dog Beaches
 surface: Sand / beach
 hours: 6:00 AM - 11:00 PM

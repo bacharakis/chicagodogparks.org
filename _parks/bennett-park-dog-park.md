@@ -1,6 +1,9 @@
 ---
 title: Bennett Park Dog Park
 address: 514 N. Peshtigo Ct, Chicago, IL 60611
+lat: 41.8913
+lng: -87.6153
+image: /assets/images/parks/bennett-park-dog-park.jpg
 neighborhood: River North / Near North
 hours: Open 24 hours
 amenities:

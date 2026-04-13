@@ -1,6 +1,9 @@
 ---
 title: River DFA (Paws Park)
 address: 5100 N. Francisco Ave, Chicago, IL 60625
+lat: 41.974
+lng: -87.702
+image: /assets/images/parks/river-dfa.jpg
 neighborhood: Logan Square / Ravenswood / Lincoln Square
 acreage: "0.10 acres"
 surface: Mixed

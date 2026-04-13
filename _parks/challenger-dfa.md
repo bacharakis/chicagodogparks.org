@@ -1,6 +1,9 @@
 ---
 title: Challenger DFA
 address: 1100 W. Irving Park Rd, Chicago, IL 60613
+lat: 41.9584
+lng: -87.6571
+image: /assets/images/parks/challenger-dfa.jpg
 neighborhood: Lakeview / Uptown
 acreage: "Very small"
 surface: Mixed

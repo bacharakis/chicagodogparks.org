@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(135deg, $green-700 0%, $green-900 100%);
+  background: linear-gradient(135deg, $amber-700 0%, $amber-900 100%);
   color: $white;
   padding: 5rem 0 4rem;
   text-align: center;
@@ -13,7 +13,7 @@
 
 .hero__subtitle {
   font-size: 1.25rem;
-  color: $green-100;
+  color: $amber-100;
   margin-bottom: 2.5rem;
   max-width: 600px;
   margin-left: auto;
@@ -36,13 +36,13 @@
   display: block;
   font-size: 2.5rem;
   font-weight: 700;
-  color: $green-400;
+  color: $amber-400;
   line-height: 1;
 }
 
 .hero__stat-label {
   font-size: 0.85rem;
-  color: $green-100;
+  color: $amber-100;
   text-transform: uppercase;
   letter-spacing: 1px;
 }

@@ -1,6 +1,9 @@
 ---
 title: Montrose Dog Beach
 address: Montrose Ave & Simonds Dr, Chicago, IL 60640
+lat: 41.9688
+lng: -87.6426
+image: /assets/images/parks/montrose-dog-beach.jpg
 neighborhood: Dog Beaches
 acreage: "~4 acres"
 surface: Sand / beach

@@ -13,11 +13,11 @@ main {
 }
 
 .page-header {
-  background: linear-gradient(135deg, $green-700, $green-900);
+  background: linear-gradient(135deg, $amber-700, $amber-900);
   color: $white;
   padding: 3rem 0;
   h1 { color: $white; }
-  .subtitle { color: $green-100; font-size: 1.15rem; }
+  .subtitle { color: $amber-100; font-size: 1.15rem; }
 }
 
 .page-content {
@@ -26,7 +26,7 @@ main {
 
 .post-meta {
   font-size: 0.9rem;
-  color: $green-100;
+  color: $amber-100;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -35,15 +35,15 @@ main {
 .post-back {
   margin-top: 3rem;
   a {
-    color: $green-700;
+    color: $amber-700;
     font-weight: 500;
-    &:hover { color: $green-500; }
+    &:hover { color: $amber-500; }
   }
 }
 
 .section {
   padding: 4rem 0;
-  &--alt { background: $green-50; }
+  &--alt { background: $amber-50; }
   &--tan { background: $tan-50; }
 }
 

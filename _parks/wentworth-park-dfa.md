@@ -1,6 +1,9 @@
 ---
 title: Wentworth Park DFA
 address: 5625 S. Mobile Ave, Chicago, IL 60638
+lat: 41.7895
+lng: -87.7789
+image: /assets/images/parks/wentworth-park-dfa.jpg
 neighborhood: South Side / Bridgeport / Bronzeville
 surface: Mixed
 hours: 6:00 AM - 11:00 PM

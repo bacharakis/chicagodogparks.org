@@ -1,6 +1,9 @@
 ---
 title: Wiggly Field
 address: 2645 N. Sheffield Ave, Chicago, IL 60614
+lat: 41.9305
+lng: -87.6534
+image: /assets/images/parks/wiggly-field.jpg
 neighborhood: Lincoln Park / Bucktown / Wicker Park
 acreage: "Large (approx. 0.5 acres)"
 surface: Pea gravel / sand

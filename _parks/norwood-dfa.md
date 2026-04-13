@@ -1,6 +1,9 @@
 ---
 title: Norwood DFA
 address: 5899 N. Avondale Ave, Chicago, IL 60631
+lat: 41.9889
+lng: -87.7944
+image: /assets/images/parks/norwood-dfa.jpg
 neighborhood: Northwest / Far North
 surface: Mixed
 hours: 6:00 AM - 11:00 PM

@@ -1,6 +1,9 @@
 ---
 title: Fred Anderson DFA
 address: 1611 S. Wabash Ave, Chicago, IL 60601
+lat: 41.8595
+lng: -87.6252
+image: /assets/images/parks/fred-anderson-dfa.jpg
 neighborhood: Downtown / South Loop
 acreage: "0.44 acres"
 surface: Artificial turf

@@ -1,6 +1,9 @@
 ---
 title: McKinley DFA
 address: 2230 W. Pershing Rd, Chicago, IL 60609
+lat: 41.8232
+lng: -87.6781
+image: /assets/images/parks/mckinley-dfa.jpg
 neighborhood: South Side / Bridgeport / Bronzeville
 acreage: "0.27 acres"
 surface: Mixed with asphalt runner

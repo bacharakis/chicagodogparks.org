@@ -1,6 +1,9 @@
 ---
 title: Walsh DFA
 address: 1722 N. Ashland Ave, Chicago, IL 60614
+lat: 41.9131
+lng: -87.6679
+image: /assets/images/parks/walsh-dfa.jpg
 neighborhood: Lincoln Park / Bucktown / Wicker Park
 surface: Mixed
 hours: 6:00 AM - 11:00 PM

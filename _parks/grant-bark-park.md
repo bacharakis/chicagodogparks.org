@@ -1,6 +1,9 @@
 ---
 title: Grant Bark Park
 address: 951-1000 S. Columbus Dr, Chicago, IL 60601
+lat: 41.8704
+lng: -87.6204
+image: /assets/images/parks/grant-bark-park.jpg
 neighborhood: Downtown / South Loop
 acreage: "0.36 acres"
 surface: Mixed

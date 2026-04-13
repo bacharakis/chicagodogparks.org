@@ -1,6 +1,9 @@
 ---
 title: Pottawattomie DFA
 address: 7340 N. Rogers Ave, Chicago, IL 60626
+lat: 42.0152
+lng: -87.6781
+image: /assets/images/parks/pottawattomie-dfa.jpg
 neighborhood: Northwest / Far North
 acreage: "0.20 acres"
 surface: Mixed

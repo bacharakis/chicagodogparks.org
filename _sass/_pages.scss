@@ -11,9 +11,9 @@
   border: 1px solid $gray-200;
   border-radius: $radius-lg;
   padding: 1.5rem;
-  border-left: 4px solid $green-500;
+  border-left: 4px solid $amber-500;
   h3 {
-    color: $green-700;
+    color: $amber-700;
     margin-bottom: 0.75rem;
     font-size: 1.1rem;
   }
@@ -48,7 +48,7 @@
 }
 
 .season-tips {
-  background: $green-50;
+  background: $amber-50;
   border-radius: $radius-lg;
   padding: 1.5rem;
   ul {
@@ -62,7 +62,7 @@
   margin-top: 1rem;
   font-size: 0.9rem;
   color: $gray-500;
-  strong { color: $green-700; }
+  strong { color: $amber-700; }
 }
 
 // Community page
@@ -78,7 +78,7 @@
   border-radius: $radius-lg;
   padding: 1.5rem;
   h3 {
-    color: $green-700;
+    color: $amber-700;
     margin-bottom: 0.25rem;
   }
   .community-card__focus {
@@ -108,7 +108,7 @@
 
 .event-name {
   font-weight: 600;
-  color: $green-700;
+  color: $amber-700;
 }
 
 .event-org {

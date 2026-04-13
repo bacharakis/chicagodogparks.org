@@ -68,21 +68,3 @@ title: Chicago Dog Parks — Your Complete Guide to Dog-Friendly Areas
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <div class="section__header">
-      <h2>Latest News</h2>
-      <p>Updates from Chicago's dog park scene</p>
-    </div>
-    <div class="grid grid--2">
-      {% for post in site.posts limit:4 %}
-      <a href="{{ post.url | relative_url }}" class="news-card">
-        <p class="news-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>

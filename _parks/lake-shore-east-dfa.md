@@ -1,6 +1,9 @@
 ---
 title: Lake Shore East DFA
 address: 450 E. Benton Place, Chicago, IL 60601
+lat: 41.8854
+lng: -87.6164
+image: /assets/images/parks/lake-shore-east-dfa.jpg
 neighborhood: Downtown / South Loop
 acreage: "0.10 acres"
 surface: Mixed

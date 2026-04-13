@@ -1,6 +1,9 @@
 ---
 title: Coliseum DFA
 address: 1466 S. Wabash Ave, Chicago, IL 60605
+lat: 41.863
+lng: -87.6258
+image: /assets/images/parks/coliseum-dfa.jpg
 neighborhood: Downtown / South Loop
 acreage: "0.06 acres"
 surface: Artificial turf

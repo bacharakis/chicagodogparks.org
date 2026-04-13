@@ -1,6 +1,9 @@
 ---
 title: Horner DFA
 address: 2741 W. Montrose Ave, Chicago, IL 60618
+lat: 41.9605
+lng: -87.6977
+image: /assets/images/parks/horner-dfa.jpg
 neighborhood: Logan Square / Ravenswood / Lincoln Square
 acreage: "0.75 acres"
 surface: Wood chips

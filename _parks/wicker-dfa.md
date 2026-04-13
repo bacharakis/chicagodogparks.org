@@ -1,6 +1,9 @@
 ---
 title: Wicker DFA (Wicker Bark)
 address: 1425 N. Damen Ave, Chicago, IL 60622
+lat: 41.908
+lng: -87.6767
+image: /assets/images/parks/wicker-dfa.jpg
 neighborhood: Lincoln Park / Bucktown / Wicker Park
 surface: Concrete and turf
 hours: 6:00 AM - 11:00 PM
