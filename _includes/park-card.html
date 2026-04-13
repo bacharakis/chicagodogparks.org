@@ -1,7 +1,7 @@
 <a href="{{ park.url | relative_url }}" class="park-card" data-neighborhood="{{ park.neighborhood }}" data-amenities="{{ park.amenities | join: ' ' }}">
   {% if park.image %}
   <div class="park-card__image">
-    <img src="{{ park.image | relative_url }}" alt="{{ park.title }}" loading="lazy">
+    <img src="{{ park.image | relative_url }}" alt="{{ park.title }} off-leash dog park in {{ park.neighborhood }}, Chicago" loading="lazy">
   </div>
   {% else %}
   <div class="park-card__image park-card__image--placeholder">

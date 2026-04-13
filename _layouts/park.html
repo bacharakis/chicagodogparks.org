@@ -1,6 +1,30 @@
 ---
 layout: default
 ---
+{% if page.lat and page.lng %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Park",
+  "name": {{ page.title | jsonify }},
+  "description": {{ content | strip_html | truncatewords: 50 | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ page.address | jsonify }}
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ page.lat }},
+    "longitude": {{ page.lng }}
+  },
+  {% if page.image %}"image": "{{ page.image | absolute_url }}",{% endif %}
+  "url": "{{ page.url | absolute_url }}",
+  "isAccessibleForFree": true,
+  {% if page.hours %}"openingHours": {{ page.hours | jsonify }},{% endif %}
+  "additionalType": "https://schema.org/DogPark"
+}
+</script>
+{% endif %}
 <section class="page-header">
   <div class="container">
     <p class="park-neighborhood">{{ page.neighborhood }}</p>
@@ -11,7 +35,7 @@ layout: default
 {% if page.image %}
 <section class="park-hero-image">
   <div class="container container--narrow">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }} off-leash dog park in {{ page.neighborhood }}, Chicago">
   </div>
 </section>
 {% endif %}
