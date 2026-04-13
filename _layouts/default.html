@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R3Z2T43KT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7R3Z2T43KT');
+  </script>
   {% seo %}
   {% if page.image %}<meta property="og:image:alt" content="{{ page.title | default: site.title }} — dog park in Chicago">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
